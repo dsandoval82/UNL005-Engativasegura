@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Mi Localidad Segura</title>
+		
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	
+	<script type="text/javascript" src="js/localizacion.js" async></script>
+	
+	</head>
+<body>
+
+<div class="container-fluid text-left">
+
+	<div class="row">
+		<div class="col-md-2">
+			<img src="img/anonymous.png" class="img-responsive"">
+		</div>
+
+		<div class="col-md-7">
+
+			<table class="table table-borderless">
+				<thead>
+					<tr>
+					<th scope="col">Nombres</th>
+					<th scope="col">Apellidos</th>
+					<th scope="col">...</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+					<th scope="row">email@server.com</th>
+					<td>Tel: +573500000000</td>
+					<td>...</td>
+					</tr>
+					<tr>
+					<th scope="row"><p id="usercity"></p><p id="userlocalization">Localizacion</p></th>
+					<td><p id="localidad"><b>Localidad</b></p></td>
+					<td><button type="button" class="btn btn-info" onclick="getLocation()">Obtener Localizacion <span class="glyphicon glyphicon-map-marker"></button>
+					</td>
+					</tr>
+				</tbody>
+			</table>
+			<a href="index.html" class="btn btn-info" role="button"><span class="glyphicon glyphicon-home"> Inicio</a>
+
+		</div>
+		<div class="col-md-3">
+			<div class="btn-group align-middle" id="loginops">
+				<button type="button" class="btn btn-sucess">Login</button>
+				<button type="button" class="btn btn-primary">Signup</button>
+				<button type="button" class="btn btn-warning">Logoff</button>
+			</div>
+		</div>
+	</div>
+
+
+
+<div class="container" id="contenido">
+	<form>
+		<div class="form-group">
+		<label for="userfname">Nombres</label>
+		<input type="email" class="form-control" id="userfname" placeholder="Nombres" required>
+	</div>
+		<div class="form-group">
+		<label for="userlname">Apellidos</label>
+		<input type="email" class="form-control" id="userlname" placeholder="Apellidos" required>
+	</div>
+	<div class="form-group">
+		<label for="useremail">Correo Electronico</label>
+		<input type="email" class="form-control" id="useremail" placeholder="correo@ejemplo.com" required>
+	</div>
+	
+	<div class="form-group">
+		<label for="useremail">Numero Telefonico</label>
+		<input type="email" class="form-control" id="userphone" placeholder="+57 0000000" required>
+	</div>
+	
+	<div class="form-group">
+		<label for="usermsg">Mensaje...</label>
+		<textarea class="form-control" id="usermsg" rows="3"></textarea>
+	</div>
+	<div class="form-check">
+		<input class="form-check-input" type="checkbox" value="" id="btnacepta" required>
+		<label class="form-check-label" for="btnacepta">
+		Acepta los Terminos de Registro
+		</label>
+	</div>
+	<button type="submit" class="btn btn-primary mb-2">Confirmar Identidad</button>
+	</form>
+</div>
+
+<div class="container" id="footer">
+
+</div>
+
+</body>
+</html>		
