@@ -5,6 +5,9 @@ Desarrollar una aplicación móvil que permita a los habitantes de la localidad 
 <h2>Nombre del Proyecto</h2>
 <h3>Mi Localidad Segura</h3>
 
+<h2>Vista Previa en Heroku</2>
+https://localidad-segura.herokuapp.com/
+
 <h2>Integrantes</h2>                   
 Yhorman Alexander Sandoval Gomez
 
